@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+}
+
+
+/*Navigation bar*/
+.topnav {
+  background-color: #4d7ba1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  padding: 2em 2em;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.topnav a:hover {
+  color: black;
+}
+
+#name {
+  background-color: #4d7ba1;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 1em 1em;
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*Content*/
+header {
+  grid-area: head;
+  background-color: #fad97f;
+  text-align: center;
+}
+
+aside {
+  display: flex;
+  background-color: #7895ad;
+  justify-content: center;
+  align-content: center;
+  padding: 3em;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2em;
+  font-size: 20px;
+  text-align: center;
+  padding-right: 3em;
+  padding-left: 3em;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2em;
+  font-size: 25px;
+  padding-top: 3em;
+  padding-bottom: 1.5em;
+}
+
+
+footer {
+  grid-area: foot;
+  background-color: #4d7ba1;
+  height: 50px;
+  width: auto;
+}
+
+#aboutme {
+  padding-top: 3em;
+  justify-content: center;
+}
+
+
+/*Containers*/
+.container1 {
+  display: grid;
+  grid-template-rows: 90% 10%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "head head aside"
+                       "foot foot foot";
+}
+
+.container2 {
+  display: grid;
+  grid-template-rows: 9fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "aside head head"
+                       "foot foot foot";
+}
+
+
+/*Resume Container*/
+.containerR{
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "main head aside"
+                       "foot foot foot";
+}
+
+main {
+  grid-area: main;
+  background-color: #fad97f;
+  padding: 3em;
+  font-family: 'Montserrat', sans-serif;
+  border-right: 5px solid white;
+  line-height: 2em;
+}
+
+.skills {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  line-height: 2em;
+  padding: 1.5em;
+}
